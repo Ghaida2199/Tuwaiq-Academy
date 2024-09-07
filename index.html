@@ -9,125 +9,176 @@
   <link rel="stylesheet" href="style.css">
   <title>Tuwaiq Academy</title>
   <style>
-    .video-background {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 80vh;
-      object-fit: cover;
-      z-index: -1;
+    @media (max-width: 768px),
+    (max-width: 992px) {
 
-    }
 
-    .overlay1 {
-      background: rgba(105, 71, 164, 0.7);
-    }
 
-    .overlay2 {
-      background: linear-gradient(180deg, rgba(105, 71, 164, 0.39) 0%, rgba(23, 23, 23, 0.39) 100%);
-    }
+      .navbar-nav {
+        justify-content: flex-start;
+        flex-direction: column !important;
+      }
 
-    .overlay3 {
-
-      background: linear-gradient(135.52deg, rgba(0, 255, 176, 0.71) 24.77%, rgba(215, 93, 255, 0.71) 67.54%, rgba(113, 150, 255, 0.71) 113.23%, rgba(217, 217, 217, 0) 137.24%);
-    }
-
-    .navbar {
-      position: relative;
-      z-index: 1;
-    }
-
-    .color-text {
-      color: white;
-      width: 30vw;
-      font-size: 7vw;
-    }
-
-    .color-button {
-      background-color: #54bbbd;
-      color: white;
-      font-weight: 700;
-      text-align: center;
-      height: 5vw;
-
-    }
-
-    .nav-link {
-      color: white
-    }
-
-    .color-button:hover {
-      opacity: 0.7;
-      color: white;
-    }
-
-    .color-text2 {
-      color: #4e3797;
+      .navbar-collapse {
+        text-align: right;
+      }
     }
   </style>
+
 </head>
 
 <body>
-
-  <video autoplay muted loop class="video-background">
-    <source src="https://tuwaiq.edu.sa/videos/introS2.mp4" type="video/mp4">
-  </video>
-  <div class="absolute inset-x-0  opacity-75 hover:text-red overlay1"></div>
-  <div class="absolute inset-x-0  opacity-25 overlay2"></div>
-  <div class="absolute inset-x-0  opacity-40 overlay3"></div>
-
-
-  <nav class="navbar navbar-expand-lg  d-flex flex-row-reverse w-80 text-white ">
-    <div class="container-fluid d-flex flex-row-reverse justify-content-around ">
-
-      <div class="collapse navbar-collapse d-flex justify-content-start  flex-row-reverse  "
-        id="navbarSupportedContent">
-
-        <img alt="Tuwaiq Academy"
-          src="https://web.archive.org/web/20240501110044im_/https://tuwaiq.edu.sa/img/logos/logo.svg"
-          style="width: 10%;">
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="container-fluid flex-row-reverse">
+    
+      <a class="navbar-brand " href="#">
         <img alt="Tuwaiq Academy"
           src="https://web.archive.org/web/20240501110044im_/https://tuwaiq.edu.sa/img/logos/logo_navbar.svg"
-          style="display: none;">
+          style="width: 120px;">
+      </a>
 
-        <ul class="navbar-nav  d-flex flex-row-reverse text-reset fs-5 justify-content-around  ">
-          <li class="nav-item  ">
-            <a class="nav-link " aria-current="page" href="#">الرئيسية</a>
+     
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end md-10" id="navbarNav">
+        <ul class="navbar-nav flex-row-reverse me-5">
+          <li class="nav-item ">
+            <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">المعسكرات والبرامج</a>
+          <li class="nav-item ">
+            <a class="nav-link na" href="#">المعسكرات والبرامج</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">حول الاكاديمية</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">الاكاديميات التابعة</a>
+            <a class="nav-link" href="#">اتصل بنا</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">مركز الاختبارات</a>
-          </li>
+
         </ul>
       </div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="d-flex  w-50 ">تسجيل الدخول</div>
-    </div>
+
+      <div class="d-none d-lg-block">
+        <a href="#" class="btn btn-outline-primary btn-login">تسجيل الدخول</a>
+      </div>
 
     </div>
+
   </nav>
-  <div class="d-flex justify-content-center align-items-center flex-column " style="height: 40vw;">
+  <video class="object-cover w-full h-screen " autoplay muted loop class="video-background ">
+    <source src="https://tuwaiq.edu.sa/videos/introS2.mp4" type="video/mp4">
+  </video>
+
+
+  <div class="row ">
     <h1 class=" color-text fw-bold  ">تعلم تقنيات المستقبــــــل</h1>
-
-
-
-    <button class="btn  rounded-pill fs-5 fs-2 color-button" style="width: 27vw;">
+    <button class="btn  rounded-pill fs-5 fs-2 color-button" style="width:27vw;">
       ابـــــــــدأ
       الآن</button>
   </div>
 
+
+  <div class="d-flex flex-column  justify-content-center align-items-center justify-content-evenly  "
+    style="height: 32vw; background-color: #e8ebee;">
+    <div class="text-center color-text2 fs-1 fw-bold ">المعسكرات والبرامج</div>
+    <div class="d-flex w-100 flex-row-reverse justify-content-around ">
+      <div class="card " style="width: 20rem;">
+        <div class="card-body ">
+          <p class="fs-6">تحدي</p>
+          <h5 class="card-title">طويق فلاق يارد</h5>
+          <p class="card-text"> الرياض</p>
+          <p class="card-text"> ١يوم</p>
+          <p class="card-text"> يبدأ في</p>
+
+          <button type="button" class="btn btn-outline-success">التفاصيل</button>
+        </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+        <div class="card-body">
+          <p class="fs-6">برنامج</p>
+          <h5 class="card-title">اساسيات اختبار الاختراق وتقييم الثغرات</h5>
+          <p class="card-text"> الرياض</p>
+          <p class="card-text"> ١يوم</p>
+          <p class="card-text"> يبدأ في</p>
+          <button type="button" class="btn btn-outline-success">التفاصيل</button>
+        </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+        <div class="card-body ">
+          <p class="fs-6">برنامج</p>
+          <h5 class="card-title"> مركز عمليات الامن السبراني (SOCL1)</h5>
+          <p class="card-text"> الرياض</p>
+          <p class="card-text"> ١يوم</p>
+          <p class="card-text"> يبدأ في</p>
+
+          <button type="button" class="btn btn-outline-success">التفاصيل</button>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-outline-secondary rounded-pill fs-5 fs-2 " style="width: 25vw;"> المزيد من المعسكرات
+      والبرامج</button>
+
+  </div>
+
+  <div class="d-flex flex-column  align-items-center justify-content-center justify-content-evenly "
+    style="height: 30vw;">
+    <div class="text-center color-text2 fs-1 fw-bold ">أرقام الاكاديمية</div>
+
+    <div class="d-flex justify-content-around w-150  h-70 text-center ">
+      <div class="border ">
+        <div><img src="" alt=""></div>
+        <div>
+          <h1 class="fs-2 text-card">عدد المعسكرات والبرامج</h1>
+        </div>
+        <div class="num-card fs-1 fw-bold"> +700</div>
+        <div>
+          <h5>معسكر وبرنامج</h5>
+        </div>
+      </div>
+
+
+      <div class="border ">
+        <div><img src="" alt=""></div>
+        <div>
+          <h1 class="fs-2 text-card">عدد المعسكرات والبرامج</h1>
+        </div>
+        <div class="num-card fs-1 fw-bold"> +700</div>
+        <div>
+          <h5>معسكر وبرنامج</h5>
+        </div>
+      </div>
+      <div class="border text-cernter">
+
+        <div><img src="" alt=""></div>
+        <div>
+          <h1 class="fs-2 text-card">عدد المعسكرات والبرامج</h1>
+        </div>
+        <div class="num-card fs-1 fw-bold"> +700</div>
+        <div>
+          <h5>معسكر وبرنامج</h5>
+        </div>
+      </div>
+      <div class="border ">
+        <div><img src="" alt=""></div>
+        <div>
+          <h1 class="fs-2 text-card">عدد المعسكرات والبرامج</h1>
+        </div>
+        <div class="num-card fs-1 fw-bold"> +700</div>
+        <div>
+          <h5>معسكر وبرنامج</h5>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-outline-secondary rounded-pill fs-5 fs-2 " style="width: 25vw;"> اقرأ تقرير منجزات
+      الاكاديمية</button>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
