@@ -3,9 +3,13 @@
 
 <head>
   <meta charset="UTF-8">
+
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
   <title>Tuwaiq Academy</title>
   <style>
@@ -23,12 +27,133 @@
         text-align: right;
       }
     }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* الفيديو بحجم كامل */
+    .video-container video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* طبقة overlay نصف شفافة */
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+            background: linear-gradient(45deg, rgba(0, 255, 176, 0.6), rgba(215, 93, 255, 0.6), rgba(113, 150, 255, 0.6));
+
+      z-index: 1; /* تحديد أولوية ظهور overlay فوق الفيديو */
+    }
+
+    /* محتوى النص أو أي شيء فوق الفيديو */
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      z-index: 2; /* فوق الفيديو والـ overlay */
+    }
+    .tt{
+      padding: 8px 20px 8px 20px   ;
+      border-radius: 25px;
+      color: #fbfbfb;
+   
+    }
+
+
+
+
+    body {
+      background-color: #f7f9fc;
+      font-family: 'Cairo', sans-serif;
+    }
+
+    .stats-section {
+      padding: 50px 0;
+      background-color: #fff;
+    }
+
+    .stats-section .card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .stats-section .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .stats-section .card-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #4e3797;
+    }
+
+    .stats-section .card-text {
+      font-size: 2rem;
+      color:#4e3797;
+      font-weight: bold;
+    }
+
+    .stats-section .icon {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 10px;
+    }
+
+    .stats-section .btn {
+      background-color: #4e3797;
+      color: #fff;
+      border-radius: 30px;
+      padding: 10px 30px;
+      font-size: 1.2rem;
+    }
+
+    .stats-section .btn:hover {
+      background-color: #20c997;
+      color: #fff;
+    }
+
+    footer {
+      background-color: #4e3797;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    footer img {
+      width: 50px;
+    }
+    .card {
+      text-align: center; /* لتوسيط النصوص والأيقونات */
+    }
+    .font{
+     font-size: 60px; 
+     color: #91d8db;
+    }
+   
   </style>
 
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light ">
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top      bg-light">
     <div class="container-fluid flex-row-reverse">
     
       <a class="navbar-brand " href="#">
@@ -57,7 +182,14 @@
           <li class="nav-item">
             <a class="nav-link" href="#">اتصل بنا</a>
           </li>
-
+          <li class="nav-item">
+            <a class="nav-link" href="#">اتصل بنا</a>
+          </li>
+          <li class="nav-item"></li>
+          <div class="d-block d-lg-none">
+            <a href="#" class="btn btn-outline-primary btn-login">تسجيل الدخول</a>
+          </div>
+          </li>
         </ul>
       </div>
 
@@ -68,117 +200,80 @@
     </div>
 
   </nav>
-  <video class="object-cover w-full h-screen " autoplay muted loop class="video-background ">
-    <source src="https://tuwaiq.edu.sa/videos/introS2.mp4" type="video/mp4">
-  </video>
 
+  
+  <div class="video-container">
+    <!-- الفيديو في الخلفية -->
+    <video autoplay muted loop>
+      <source src="https://tuwaiq.edu.sa/videos/introS2.mp4" type="video/mp4">
+    </video>
 
-  <div class="row ">
-    <h1 class=" color-text fw-bold  ">تعلم تقنيات المستقبــــــل</h1>
-    <button class="btn  rounded-pill fs-5 fs-2 color-button" style="width:27vw;">
-      ابـــــــــدأ
-      الآن</button>
+    <!-- طبقة الـ overlay -->
+    <div class="overlay"></div>
+
+    <!-- المحتوى فوق الفيديو -->
+    <div class="content">
+      <h1 class="fs-9">تعلم تقنيات </h1>
+      <h1 class="fs-9">  المستقبل</h1>
+      <button class="btn btn-info tt fs-3">ابـــــــــدأ الآن</button>
+    </div>
   </div>
+<!--   rfhgdfjhdfgjhdffhjdfhjdfgdffdsgfdgdf-->
 
-
-  <div class="d-flex flex-column  justify-content-center align-items-center justify-content-evenly  "
-    style="height: 32vw; background-color: #e8ebee;">
-    <div class="text-center color-text2 fs-1 fw-bold ">المعسكرات والبرامج</div>
-    <div class="d-flex w-100 flex-row-reverse justify-content-around ">
-      <div class="card " style="width: 20rem;">
-        <div class="card-body ">
-          <p class="fs-6">تحدي</p>
-          <h5 class="card-title">طويق فلاق يارد</h5>
-          <p class="card-text"> الرياض</p>
-          <p class="card-text"> ١يوم</p>
-          <p class="card-text"> يبدأ في</p>
-
-          <button type="button" class="btn btn-outline-success">التفاصيل</button>
-        </div>
-      </div>
-      <div class="card" style="width: 20rem;">
-        <div class="card-body">
-          <p class="fs-6">برنامج</p>
-          <h5 class="card-title">اساسيات اختبار الاختراق وتقييم الثغرات</h5>
-          <p class="card-text"> الرياض</p>
-          <p class="card-text"> ١يوم</p>
-          <p class="card-text"> يبدأ في</p>
-          <button type="button" class="btn btn-outline-success">التفاصيل</button>
-        </div>
-      </div>
-      <div class="card" style="width: 20rem;">
-        <div class="card-body ">
-          <p class="fs-6">برنامج</p>
-          <h5 class="card-title"> مركز عمليات الامن السبراني (SOCL1)</h5>
-          <p class="card-text"> الرياض</p>
-          <p class="card-text"> ١يوم</p>
-          <p class="card-text"> يبدأ في</p>
-
-          <button type="button" class="btn btn-outline-success">التفاصيل</button>
-        </div>
+<div class="container-fluid stats-section text-center">
+  <h2 class="mb-5 text-primary">أرقام الأكاديمية</h2>
+  <div class="row justify-content-center justify-items-center ">
+    <div class="col-md-4 col-lg-3 col-xl-3 col-sm-6 col-xxl-2 mb-4">
+      <div class="card p-4 d-flex justify-content-center align-items-center" > 
+        <i class="fas fa-graduation-cap icon mb-3 font" ></i> 
+        <h5 class="card-title">عدد المعسكرات والبرامج</h5>
+        <p class="card-text">700+</p>
+        <h6>معسكر وبرنامج</h6>
       </div>
     </div>
-    <button class="btn btn-outline-secondary rounded-pill fs-5 fs-2 " style="width: 25vw;"> المزيد من المعسكرات
-      والبرامج</button>
-
-  </div>
-
-  <div class="d-flex flex-column  align-items-center justify-content-center justify-content-evenly "
-    style="height: 30vw;">
-    <div class="text-center color-text2 fs-1 fw-bold ">أرقام الاكاديمية</div>
-
-    <div class="d-flex justify-content-around w-150  h-70 text-center ">
-      <div class="border ">
-        <div><img src="" alt=""></div>
-        <div>
-          <h1 class="fs-2 text-card">عدد المعسكرات والبرامج</h1>
-        </div>
-        <div class="num-card fs-1 fw-bold"> +700</div>
-        <div>
-          <h5>معسكر وبرنامج</h5>
-        </div>
-      </div>
-
-
-      <div class="border ">
-        <div><img src="" alt=""></div>
-        <div>
-          <h1 class="fs-2 text-card">عدد المعسكرات والبرامج</h1>
-        </div>
-        <div class="num-card fs-1 fw-bold"> +700</div>
-        <div>
-          <h5>معسكر وبرنامج</h5>
-        </div>
-      </div>
-      <div class="border text-cernter">
-
-        <div><img src="" alt=""></div>
-        <div>
-          <h1 class="fs-2 text-card">عدد المعسكرات والبرامج</h1>
-        </div>
-        <div class="num-card fs-1 fw-bold"> +700</div>
-        <div>
-          <h5>معسكر وبرنامج</h5>
-        </div>
-      </div>
-      <div class="border ">
-        <div><img src="" alt=""></div>
-        <div>
-          <h1 class="fs-2 text-card">عدد المعسكرات والبرامج</h1>
-        </div>
-        <div class="num-card fs-1 fw-bold"> +700</div>
-        <div>
-          <h5>معسكر وبرنامج</h5>
-        </div>
+    <div class="col-md-4 col-lg-3 col-xl-3 col-sm-6 col-xxl-2 mb-4">
+      <div class="card p-4 d-flex justify-content-center align-items-center" > 
+        <i class="fas fa-user-friends icon mb-3 font" ></i> 
+        <h5 class="card-title">عدد المتدربين</h5>
+        <p class="card-text">1000000+</p>
+        <h6>متدرب</h6>
       </div>
     </div>
-    <button class="btn btn-outline-secondary rounded-pill fs-5 fs-2 " style="width: 25vw;"> اقرأ تقرير منجزات
-      الاكاديمية</button>
+    <div class="col-md-4 col-lg-3 col-xl-3 col-sm-6 col-xxl-2 mb-4">
+      <div class="card p-4 d-flex justify-content-center align-items-center" > 
+        <i class="fas fa-certificate icon mb-3 font" ></i> 
+        <h5 class="card-title">عدد الشهادات الممنوحة</h5>
+        <p class="card-text">150000+</p>
+        <h6>شهادة</h6>
+      </div>
+    </div>
+    <div class="col-md-4 col-lg-3 col-xl-4 col-sm-6 col-xxl-2 mb-4">
+      <div class="card p-4 d-flex justify-content-center align-items-center" >
+        <i class="fa-solid fa-rocket icon mb-3 font" ></i> 
+        <h5 class="card-title"> منــصــة ســـطــر </h5>
+        <p class="card-text">150000+</p>
+        <h6>متدرب</h6>
+      </div>
+    </div>
   </div>
 
+  <button class="btn mt-5">المزيد من المعسكرات والبرامج</button>
+</div>
 
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p>جميع الحقوق محفوظة للأكاديمية &copy; 2024</p>
+        <img src="https://via.placeholder.com/50" alt="Logo">
+      </div>
+    </div>
+  </div>
+</footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- مكتبة Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
