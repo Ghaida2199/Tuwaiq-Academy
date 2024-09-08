@@ -208,6 +208,19 @@
     color: #4e3797;
 
   }
+  .me-2{
+    margin: 10px;
+  }
+  .pt-100{
+    padding-top: 100px;
+  }
+  .pb-100{
+    padding-bottom: 100px;
+  }
+  .linksa a , .social-icons i{
+    text-decoration: none;
+    color: #fff;
+  }
   </style>
 
 </head>
@@ -237,7 +250,7 @@
             <a class="nav-link na" href="#">المعسكرات والبرامج</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">حول الاكاديمية</a>
+            <a class="nav-link" href="about.html">حول الاكاديمية</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">اتصل بنا</a>
@@ -247,14 +260,17 @@
           </li>
           <li class="nav-item"></li>
           <div class="d-block d-lg-none">
-            <a href="#" class="btn btn-outline-primary btn-login">تسجيل الدخول</a>
+            <!-- <a href="#" class="btn btn-outline-primary btn-login">تسجيل الدخول</a> -->
+            <span class="nav-link" > تسجيل الدخول</span>
           </div>
           </li>
         </ul>
       </div>
 
       <div class="d-none d-lg-block">
-        <a href="#" class="btn btn-outline-primary btn-login">تسجيل الدخول</a>
+      
+          <span class="nav-link" style="color:gray"> تسجيل دخول</span>
+        
       </div>
 
     </div>
@@ -289,41 +305,72 @@
 <div class="container-fluid Camps text-center">
   <h2 class="mb-5  card-"> البرامج والمعسكرات</h2>
   <div class="row justify-content-center">
-    <div class="col-md-6 col-lg-4 mb-4">
-      <div class="card shadow-right1 h-100">
-        <div class="card-body d-flex flex-column raduis">
-          <p class="card-text">تحدي</p>
-          <h5 class="card-text">طويق فلاق يارد</h5>
-          <p class="card-text">الرياض</p>
-          <p class="card-text">١ يوم</p>
-          <p class="card-text">يبدأ في:	٨‏/٩‏/٢٠٢٤ م</p>
-          <button type="button" class="btn  btn-de">التفاصيل</button>
-        </div>
-      </div>
-    </div>
+  
 
     <div class="col-md-6 col-lg-4 mb-4">
       <div class="card shadow-right1 h-100">
         <div class="card-body d-flex flex-column raduis">
           <p class="card-text">برنامج</p>
           <h5 class="card-text">اساسيات اختبار الاختراق وتقييم الثغرات</h5>
-          <p class="card-text">الرياض</p>
-          <p class="card-text">١ يوم</p>
-          <p class="card-text">يبدأ في:	٨‏/٩‏/٢٠٢٤ م</p>
-          <button type="button" class="btn  btn-de ">التفاصيل</button>
+          <div class="d-flex justify-content-end align-items-center ">
+            
+            <p class="card-text mb-0 me-2">١ يوم</p>
+            <span></span>
+            <i class="fa-solid fa-calendar-days"></i>
+            <p class="card-text mb-0 me-2">الرياض</p> 
+            <span></span>
+            <i class="fa-solid fa-location-dot"></i>
+           
+          </div>
+          <div class="d-flex justify-content-between align-items-center flex-row-reverse">
+            <p class="card-text mb-0">يبدأ في: ٨‏/٩‏/٢٠٢٤ م</p>
+            <button type="button" class="btn btn-de">التفاصيل</button>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="col-md-6 col-lg-4 mb-4">
-      <div class="card shadow-right2 h-100">
+      <div class="card shadow-right1 h-100">
         <div class="card-body d-flex flex-column raduis">
           <p class="card-text">برنامج</p>
           <h5 class="card-text">مركز عمليات الامن السبراني (SOCL1)</h5>
-          <p class="card-text">الرياض</p>
-          <p class="card-text">١ يوم</p>
-          <p class="card-text">يبدأ في:	٨‏/٩‏/٢٠٢٤ م</p>
-          <button type="button" class="btn  btn-de">التفاصيل</button>
+          <div class="d-flex justify-content-end align-items-center ">
+            
+            <p class="card-text mb-0 me-2">١ يوم</p>
+            <span></span>
+            <i class="fa-solid fa-calendar-days"></i>
+            <p class="card-text mb-0 me-2">الرياض</p> 
+            <span></span>
+            <i class="fa-solid fa-location-dot"></i>
+           
+          </div>
+          <div class="d-flex justify-content-between align-items-center flex-row-reverse">
+            <p class="card-text mb-0">يبدأ في: ٨‏/٩‏/٢٠٢٤ م</p>
+            <button type="button" class="btn btn-de">التفاصيل</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4  col-xl-4 mb-4">
+      <div class="card shadow-right2 h-100">
+        <div class="card-body d-flex flex-column raduis">
+          <p class="card-text">تحدي</p>
+          <h5 class="card-text">طويق فلاق يارد</h5>
+          <div class="d-flex justify-content-end align-items-center ">
+            
+            <p class="card-text mb-0 me-2">١ يوم</p>
+            <span></span>
+            <i class="fa-solid fa-calendar-days"></i>
+            <p class="card-text mb-0 me-2">الرياض</p> 
+            <span></span>
+            <i class="fa-solid fa-location-dot"></i>
+           
+          </div>
+          <div class="d-flex justify-content-between align-items-center flex-row-reverse">
+            <p class="card-text mb-0 me-2">يبدأ في: ٨‏/٩‏/٢٠٢٤ م</p>
+            <button type="button" class="btn btn-de">التفاصيل</button>
+          </div>
         </div>
       </div>
     </div>
@@ -338,14 +385,25 @@
 <div class="container-fluid stats-section text-center">
   <h2 class="mb-5  card-text ">أرقام الأكاديمية</h2>
   <div class="row justify-content-center justify-items-center ">
-    <div class="col-md-4 col-lg-3 col-xl-3 col-sm-6 col-xxl-2 mb-4">
-      <div class="card p-4 d-flex justify-content-center align-items-center" > 
-        <i class="fas fa-graduation-cap icon mb-3 font" ></i> 
-        <h5 class="card-title">عدد المعسكرات والبرامج</h5>
-        <p class="card-text">700+</p>
-        <h6>معسكر وبرنامج</h6>
+    <div class="col-md-4 col-lg-3 col-xl-4 col-sm-6 col-xxl-2 mb-4">
+      <div class="card p-4 d-flex justify-content-center align-items-center" >
+        <i class="fa-solid fa-rocket icon mb-3 font" ></i> 
+        <h5 class="card-title"> منــصــة ســـطــر </h5>
+        <p class="card-text">150000+</p>
+        <h6>متدرب</h6>
       </div>
     </div>
+    
+    
+    <div class="col-md-4 col-lg-3 col-xl-3 col-sm-6 col-xxl-2 mb-4">
+      <div class="card p-4 d-flex justify-content-center align-items-center" > 
+        <i class="fas fa-certificate icon mb-3 font" ></i> 
+        <h5 class="card-title">عدد الشهادات الممنوحة</h5>
+        <p class="card-text">150000+</p>
+        <h6>شهادة</h6>
+      </div>
+    </div>
+   
     <div class="col-md-4 col-lg-3 col-xl-3 col-sm-6 col-xxl-2 mb-4">
       <div class="card p-4 d-flex justify-content-center align-items-center" > 
         <i class="fas fa-user-friends icon mb-3 font" ></i> 
@@ -356,18 +414,10 @@
     </div>
     <div class="col-md-4 col-lg-3 col-xl-3 col-sm-6 col-xxl-2 mb-4">
       <div class="card p-4 d-flex justify-content-center align-items-center" > 
-        <i class="fas fa-certificate icon mb-3 font" ></i> 
-        <h5 class="card-title">عدد الشهادات الممنوحة</h5>
-        <p class="card-text">150000+</p>
-        <h6>شهادة</h6>
-      </div>
-    </div>
-    <div class="col-md-4 col-lg-3 col-xl-4 col-sm-6 col-xxl-2 mb-4">
-      <div class="card p-4 d-flex justify-content-center align-items-center" >
-        <i class="fa-solid fa-rocket icon mb-3 font" ></i> 
-        <h5 class="card-title"> منــصــة ســـطــر </h5>
-        <p class="card-text">150000+</p>
-        <h6>متدرب</h6>
+        <i class="fas fa-graduation-cap icon mb-3 font" ></i> 
+        <h5 class="card-title">عدد المعسكرات والبرامج</h5>
+        <p class="card-text">700+</p>
+        <h6>معسكر وبرنامج</h6>
       </div>
     </div>
   </div>
@@ -427,16 +477,86 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <!-- Footer -->
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
+
+  
+    <!-- <div class="row">
+      <div class="col-md-4 col-lg-4 col-xl-3 ">
+        <img src="https://web.archive.org/web/20240814102443im_/https://cdn.tuwaiq.edu.sa/landing/images/logo/logo-h-white.png" alt="Logo">
+      </div>
+
+
+
+      <div class="col-md-4 col-lg-4 col-xl-6 ">
         <p>جميع الحقوق محفوظة للأكاديمية &copy; 2024</p>
         <img src="https://via.placeholder.com/50" alt="Logo">
       </div>
-    </div>
-  </div>
-</footer>
+
+
+      <div class="col-md-4 col-lg-4 col-xl-6 ">
+        <p>جميع الحقوق محفوظة للأكاديمية &copy; 2024</p>
+        <img src="https://via.placeholder.com/50" alt="Logo">
+      </div>
+
+
+      <div class="col-md-4 col-lg-4 col-xl-6 ">
+        <p>جميع الحقوق محفوظة للأكاديمية &copy; 2024</p>
+        <img src="https://via.placeholder.com/50" alt="Logo">
+      </div>
+      
+      
+    </div> -->
+    <footer class="pt-100 linksa">
+      <div class="">
+          <div class="row align-items-center text-center">
+              <!-- الشعار الأول -->
+              <div class="col-md-2 mb-3 mb-md-0">
+                  <div class="footer-logo">
+                      <img src="https://web.archive.org/web/20230803164817im_/https://tuwaiq.edu.sa/img/logos/logo.svg" alt="Logo" class="img-fluid" style="min-width:70%;">
+                  </div>
+              </div>
+  
+              <!-- الروابط -->
+              <div class="col-md-2 mb-3 mb-md-0">
+                  <div class="links d-flex flex-column justify-content-center">
+                      <a href="#terms-and-conditions" class="mx-2 text-decoration-none">الشروط والأحكام</a>
+                      <a href="#privacy-policy" class="mx-2 text-decoration-none">سياسة الخصوصية</a>
+                  </div>
+              </div>
+  
+              <div class="col-md-2 mb-3 mb-md-0">
+                  <div class="links d-flex flex-column justify-content-center">
+                      <a href="#terms-and-conditions" class="mx-2 text-decoration-none">شارك كمدرب</a>
+                      <a href="#about-academy" class="mx-2 text-decoration-none">حول الأكاديمية</a>
+                  </div>
+              </div>
+  
+              <!-- الأيقونات الاجتماعية -->
+              <div class="col-md-4 mb-3 mb-md-0">
+                  <div class="social-icons d-flex justify-content-center">
+                      <a href="#" class="mx-2 text-dark" aria-label="Linkedin"><i class="fab fa-linkedin"></i></a>
+                      <a href="#" class="mx-2 text-dark" aria-label="Snapchat"><i class="fab fa-snapchat"></i></a>
+                      <a href="#" class="mx-2 text-dark" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                      <a href="#" class="mx-2 text-dark" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                      <a href="#" class="mx-2 text-dark" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                  </div>
+                  <p class="mt-2">@TuwaiqAcademy</p>
+              </div>
+  
+              <!-- الشعار الثاني -->
+              <div class="col-md-2 mb-3 mb-md-0">
+                  <div class="footer-logo">
+                      <img src="https://web.archive.org/web/20231014011832im_/https://tuwaiq.edu.sa/img/logos/logos2.svg" alt="Logo" class="img-fluid" style="min-width:70%;">
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- النص الحقوق -->
+      <div class="text-center mt-3 pt-100">
+          <p class="mt-2">جميع الحقوق محفوظة لأكاديمية طويق 2024</p>
+      </div>
+  </footer>
+  
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
