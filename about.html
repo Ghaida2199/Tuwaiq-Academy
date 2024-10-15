@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,164 +8,156 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        @media (max-width: 768px),
-    (max-width: 992px) {
-      
-
-
-
-      .navbar-nav {
-        justify-content: flex-start;
-        flex-direction: column !important;
-      }
-
-      .navbar-collapse {
-        text-align: right;
-      }
-    }
-      
-        .content {
-            padding: 40px;
-            background-color: #fff;
-            border-radius: 10px;
-           
-            margin-bottom: 40px;
+        .linksa a,
+        .social-icons i {
+            text-decoration: none;
+            color: #fff;
         }
-        h1, h2 {
+
+        .footer-logo img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .pt-100 {
+            padding-top: 100px;
+        }
+
+        .pb-100 {
+            padding-bottom: 100px;
+        }
+
+        footer {
+            background-color: #604ba1;
+            padding: 40px 0;
+            color: #fff;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer p {
+            margin-top: 10px;
+        }
+
+        h2 {
             color: #604ba1;
-            margin-bottom: 30px;
+            font-weight: bold;
             text-align: center;
-            font-weight: 700;
-            font-size: 2.5rem;
+            margin-bottom: 30px;
         }
-        h5{
-            color: #604ba1;
-        }
-        p {
-            color: #7f8c8d;
-            line-height: 1.8;
-            text-align: justify;
-            font-size: 1.2rem;
-        }
-        .stats, .offerings, .competitions {
-            margin-top: 30px;
-        }
+
         .card {
             border: none;
-            border-radius: 10px;
-            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
         }
+
         .card:hover {
             transform: scale(1.05);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
         }
-        .card-body {
-            text-align: center;
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #604ba1;
+            display: flex; 
+            justify-content: center;
+           
+       
         }
+
         .card-icon {
             font-size: 3rem;
             color: #54b8bd;
             margin-bottom: 15px;
+            display: flex; 
+            justify-content: center;
         }
-        .card-title {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #2c3e50;
-        }
-        .offerings ul, .competitions ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .offerings li, .competitions li {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-            background-color: #ecf0f1;
-            padding: 15px;
-            border-radius: 5px;
+        .img-about{
             display: flex;
-            align-items: center;
-            justify-content: flex-start;
+            justify-content: center;
         }
-        
-
-
-
-        .card-icon {
-            width: 60px;
-           
-         
+        .title3{
+            text-align: right;
+            font-size: 3vh;
+            margin-bottom: 7vh;
         }
-        .card-title {
-            font-size: 1.5rem;
-            font-weight: bold;
-           color: #604ba1;
-           
+        .title4{
+        font-weight: 700;
+        font-size: 4vh;
+        text-align: right;
+        }
+        .img3{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .text{
+            text-align: center;
         }
     </style>
 </head>
+
 <body>
 
-
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top    bg-light">
+    <!-- Header Section -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-light">
         <div class="container-fluid flex-row-reverse">
-        
-          <a class="navbar-brand " href="#">
-            <img alt="Tuwaiq Academy"
-              src="https://web.archive.org/web/20240501110044im_/https://tuwaiq.edu.sa/img/logos/logo_navbar.svg"
-              style="width: 120px;">
-          </a>
-    
-         
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-    
-          <div class="collapse navbar-collapse justify-content-end md-10" id="navbarNav">
-            <ul class="navbar-nav flex-row-reverse me-5">
-              <li class="nav-item ">
-                <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link na" href="#">المعسكرات والبرامج</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">حول الاكاديمية</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">اتصل بنا</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">اتصل بنا</a>
-              </li>
-              <li class="nav-item"></li>
-              <div class="d-block d-lg-none">
-                <!-- <a href="#" class="btn btn-outline-primary btn-login">تسجيل الدخول</a> -->
-                <span class="nav-link" > تسجيل الدخول</span>
-              </div>
-              </li>
-            </ul>
-          </div>
-    
-          <div class="d-none d-lg-block">
-          
-              <span class="nav-link" style="color:gray"> تسجيل دخول</span>
-            
-          </div>
-    
+            <a class="navbar-brand" href="#">
+                <img alt="Tuwaiq Academy"
+                    src="https://web.archive.org/web/20240501110044im_/https://tuwaiq.edu.sa/img/logos/logo_navbar.svg"
+                    style="width: 120px;">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end md-10  " id="navbarNav">
+                <ul class="navbar-nav flex-row-reverse me-5">
+                    <li class="nav-item ">
+                        <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link na" href="#">المعسكرات والبرامج</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">حول الاكاديمية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">اتصل بنا</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="d-none d-lg-block">
+                <span class="nav-link" style="color:gray">تسجيل دخول</span>
+            </div>
         </div>
-    
-      </nav>
+    </nav>
+
+    <!-- Main Content -->
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-10 content">
                 <div>
-                    <img src="https://web.archive.org/web/20230531211751im_/https://tuwaiq.edu.sa/img/aboutImage2.png" alt="من نحن؟" class="img-fluid w-100 mb-4">
-                  </div>
-                  
-                <p>من نحن؟</p>
-                <p>
-                    تُعد أكاديمية طويق الأولى في البرامج التعليمية لمجالات التقنيات المتقدمة بالمملكة العربية السعودية، حيث تقدم عدد من البرامج المتنوعة في مختلف المسارات التقنية ولمختلف الفئات العمرية؛ وتم الإعـــلان عن تأسيس الأكاديمية في أغسطس من عام 2019م.
+                    <img src="https://web.archive.org/web/20230531211751im_/https://tuwaiq.edu.sa/img/aboutImage2.png"
+                        alt="من نحن؟" class="img-fluid w-100 mb-4">
+                </div>
+
+                <p class=" title4" >من نحن؟</p>
+                <p class="title3">
+                    تُعد أكاديمية طويق الأولى في البرامج التعليمية لمجالات التقنيات المتقدمة بالمملكة العربية السعودية،
+                    حيث تقدم عدد من البرامج المتنوعة في مختلف المسارات التقنية ولمختلف الفئات العمرية؛ وتم الإعـــلان عن
+                    تأسيس الأكاديمية في أغسطس من عام 2019م.
                 </p>
 
                 <div class="row stats">
@@ -180,7 +173,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="card-icon"><i class="fas fa-user-plus"></i></div>
-                                <h5 class="card-title">+5000 تسجيل في البرنامج الواحد</h5>
+                                <h5 class="card-title">+5000  في البرنامج الواحد</h5>
                             </div>
                         </div>
                     </div>
@@ -194,14 +187,18 @@
                     </div>
                 </div>
 
-                
+
                 <div class="container">
                     <h2 class="text-center my-5">ماذا نقدم؟</h2>
                     <div class="row">
                         <div class="col-md-4">
                             <div class="card">
                                 <div class="card-body">
-                                    <img src="https://web.archive.org/web/20230531211712im_/https://tuwaiq.edu.sa/icons/elearn-icons.svg" alt="التعليم الإلكتروني" class="card-icon">
+                                    <div class="img3">
+       <img class="img-about" src="https://web.archive.org/web/20230531211712im_/https://tuwaiq.edu.sa/icons/elearn-icons.svg" alt="التعليم الإلكتروني" class="card-icon">
+
+                                    </div>
+                                       
                                     <h5 class="card-title">التعليم الإلكتروني</h5>
                                 </div>
                             </div>
@@ -209,7 +206,10 @@
                         <div class="col-md-4">
                             <div class="card">
                                 <div class="card-body">
-                                    <img src="https://web.archive.org/web/20240501100545im_/https://tuwaiq.edu.sa/icons/competitions-icons.svg" alt="المنافسات العالمية" class="card-icon">
+                                    <div class="img3">
+                                    <img src="https://web.archive.org/web/20240501100545im_/https://tuwaiq.edu.sa/icons/competitions-icons.svg"
+                                        alt="المنافسات العالمية" class="card-icon">
+                                        </div>
                                     <h5 class="card-title">المنافسات العالمية</h5>
                                 </div>
                             </div>
@@ -217,7 +217,10 @@
                         <div class="col-md-4">
                             <div class="card">
                                 <div class="card-body">
-                                    <img src="https://web.archive.org/web/20240501100545im_/https://tuwaiq.edu.sa/icons/meetings-icons.svg" alt="اللقاءات المعرفية" class="card-icon">
+                                    <div class="img3">
+                                    <img src="https://web.archive.org/web/20240501100545im_/https://tuwaiq.edu.sa/icons/meetings-icons.svg"
+                                        alt="اللقاءات المعرفية" class="card-icon">
+                                    </div>
                                     <h5 class="card-title">اللقاءات المعرفية</h5>
                                 </div>
                             </div>
@@ -225,7 +228,10 @@
                         <div class="col-md-4">
                             <div class="card">
                                 <div class="card-body">
-                                    <img src="https://web.archive.org/web/20240501100545im_/https://tuwaiq.edu.sa/icons/ecommunity-icons.svg" alt="المجتمعات الرقمية" class="card-icon">
+                                    <div class="img3">
+                                    <img src="https://web.archive.org/web/20240501100545im_/https://tuwaiq.edu.sa/icons/ecommunity-icons.svg"
+                                        alt="المجتمعات الرقمية" class="card-icon">
+                                        </div>
                                     <h5 class="card-title">المجتمعات الرقمية</h5>
                                 </div>
                             </div>
@@ -233,7 +239,10 @@
                         <div class="col-md-4">
                             <div class="card">
                                 <div class="card-body">
-                                    <img src="https://web.archive.org/web/20240501100545im_/https://tuwaiq.edu.sa/icons/bootcamps-icons.svg" alt="المعسكرات" class="card-icon">
+                                    <div class="img3">
+                                    <img src="https://web.archive.org/web/20240501100545im_/https://tuwaiq.edu.sa/icons/bootcamps-icons.svg"
+                                        alt="المعسكرات" class="card-icon">
+                                        </div>
                                     <h5 class="card-title">المعسكرات</h5>
                                 </div>
                             </div>
@@ -241,7 +250,10 @@
                         <div class="col-md-4">
                             <div class="card">
                                 <div class="card-body">
-                                    <img src="https://web.archive.org/web/20240501100545im_/https://tuwaiq.edu.sa/icons/train-icons.svg" alt="البرامج التدريبية" class="card-icon">
+                                    <div class="img3">
+                                    <img src="https://web.archive.org/web/20240501100545im_/https://tuwaiq.edu.sa/icons/train-icons.svg"
+                                        alt="البرامج التدريبية" class="card-icon">
+                                        </div>
                                     <h5 class="card-title">البرامج التدريبية</h5>
                                 </div>
                             </div>
@@ -249,40 +261,43 @@
                     </div>
                 </div>
 
-                
-<div class="container">
-    <h2 class="text-center my-5">المنافسات العالمية</h2>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="card">
-                <div class="card-body">
-                    <img src="https://web.archive.org/web/20240501100545im_/https://tuwaiq.edu.sa/icons/competition-icons.svg" alt="الأولمبياد" class="card-icon">
-                    <h5 class="card-title">الأولمبياد العالمي للروبوت "WRO"</h5>
-                    <p>فوز الفريق بالمركز الأول عالمياً</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <div class="card-body">
-                    <img src="https://web.archive.org/web/20240501100545im_/https://tuwaiq.edu.sa/icons/competition-icons.svg" alt="تحدي علوم المستقبل" class="card-icon">
-                    <h5 class="card-title">تحدي علوم المستقبل</h5>
-                    <p>المركز الأول في مسابقة تحدي علوم المستقبل</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <div class="card-body">
-                    <img src="https://web.archive.org/web/20240501100545im_/https://tuwaiq.edu.sa/icons/competition-icons.svg" alt="المعمل الرقمي الافتراضي" class="card-icon">
-                    <h5 class="card-title">المعمل الرقمي الافتراضي</h5>
-                    <p>المشاركة بأكثر من 100 مشروع</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
+                <div class="container">
+                    <h2 class="text-center my-5">المنافسات العالمية</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="https://web.archive.org/web/20240501100545im_/https://tuwaiq.edu.sa/icons/competition-icons.svg"
+                                        alt="الأولمبياد" class="card-icon">
+                                    <h5 class="card-title text">الأولمبياد العالمي للروبوت "WRO"</h5>
+                                    <p class="text">فوز الفريق بالمركز الأول عالمياً</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="https://web.archive.org/web/20240501100545im_/https://tuwaiq.edu.sa/icons/competition-icons.svg"
+                                        alt="تحدي علوم المستقبل" class="card-icon">
+                                    <h5 class="card-title">تحدي علوم المستقبل</h5>
+                                    <p class="text">المركز الأول في مسابقة تحدي علوم المستقبل</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="https://web.archive.org/web/20240501100545im_/https://tuwaiq.edu.sa/icons/competition-icons.svg"
+                                        alt="المعمل الرقمي الافتراضي" class="card-icon">
+                                    <h5 class="card-title">المعمل الرقمي الافتراضي</h5>
+                                    <p class="text">المشاركة بأكثر من 100 مشروع</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-- 
                 <h2>العنوان</h2>
                 <p>
                     المملكة العربية السعودية<br>
@@ -290,62 +305,69 @@
                     جامعة الأميرة نورة بنت عبدالرحمن<br>
                     المبنى: 3446<br>
                     الرمز البريدي: 13415
-                </p>
+                </p> -->
             </div>
         </div>
     </div>
-    <footer class="pt-100 linksa">
-        <div class="">
+    </div>
+    <!-- Footer Section -->
+    <footer class="pt-5 linksa">
+        <div class="container">
             <div class="row align-items-center text-center">
                 <!-- الشعار الأول -->
                 <div class="col-md-2 mb-3 mb-md-0">
                     <div class="footer-logo">
-                        <img src="https://web.archive.org/web/20230803164817im_/https://tuwaiq.edu.sa/img/logos/logo.svg" alt="Logo" class="img-fluid" style="min-width:70%;">
+                        <img src="https://web.archive.org/web/20230803164817im_/https://tuwaiq.edu.sa/img/logos/logo.svg"
+                            alt="Logo" class="img-fluid">
                     </div>
                 </div>
-    
+
                 <!-- الروابط -->
                 <div class="col-md-2 mb-3 mb-md-0">
                     <div class="links d-flex flex-column justify-content-center">
-                        <a href="#terms-and-conditions" class="mx-2 text-decoration-none">الشروط والأحكام</a>
-                        <a href="#privacy-policy" class="mx-2 text-decoration-none">سياسة الخصوصية</a>
+                        <a href="#terms-and-conditions" class="mx-2">الشروط والأحكام</a>
+                        <a href="#privacy-policy" class="mx-2">سياسة الخصوصية</a>
                     </div>
                 </div>
-    
+
                 <div class="col-md-2 mb-3 mb-md-0">
                     <div class="links d-flex flex-column justify-content-center">
-                        <a href="#terms-and-conditions" class="mx-2 text-decoration-none">شارك كمدرب</a>
-                        <a href="#about-academy" class="mx-2 text-decoration-none">حول الأكاديمية</a>
+                        <a href="#train-as-coach" class="mx-2">شارك كمدرب</a>
+                        <a href="#about-academy" class="mx-2">حول الأكاديمية</a>
                     </div>
                 </div>
-    
+
                 <!-- الأيقونات الاجتماعية -->
                 <div class="col-md-4 mb-3 mb-md-0">
                     <div class="social-icons d-flex justify-content-center">
-                        <a href="#" class="mx-2 text-dark" aria-label="Linkedin"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="mx-2 text-dark" aria-label="Snapchat"><i class="fab fa-snapchat"></i></a>
-                        <a href="#" class="mx-2 text-dark" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                        <a href="#" class="mx-2 text-dark" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="mx-2 text-dark" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="mx-2" aria-label="Linkedin"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="mx-2" aria-label="Snapchat"><i class="fab fa-snapchat"></i></a>
+                        <a href="#" class="mx-2" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="mx-2" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="mx-2" aria-label="Discord"><i class="fab fa-discord"></i></a>
                     </div>
                     <p class="mt-2">@TuwaiqAcademy</p>
                 </div>
-    
+
                 <!-- الشعار الثاني -->
                 <div class="col-md-2 mb-3 mb-md-0">
                     <div class="footer-logo">
-                        <img src="https://web.archive.org/web/20231014011832im_/https://tuwaiq.edu.sa/img/logos/logos2.svg" alt="Logo" class="img-fluid" style="min-width:70%;">
+                        <img src="https://web.archive.org/web/20231014011832im_/https://tuwaiq.edu.sa/img/logos/logos2.svg"
+                            alt="Logo" class="img-fluid">
                     </div>
                 </div>
             </div>
         </div>
+
         <!-- النص الحقوق -->
-        <div class="text-center mt-3 pt-100">
-            <p class="mt-2">جميع الحقوق محفوظة لأكاديمية طويق 2024</p>
+        <div class="text-center mt-3">
+            <p>جميع الحقوق محفوظة لأكاديمية طويق 2024</p>
         </div>
     </footer>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>
